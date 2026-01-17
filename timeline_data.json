@@ -1,0 +1,254 @@
+[
+    {
+        "start_date": {
+            "year": "2014",
+            "month": "06"
+        },
+        "text": {
+            "headline": "Generatywne Sieci Przeciwnicze (GAN)",
+            "text": "<p><b>Ian Goodfellow i in. (Uniwersytet w Montrealu)</b></p><p>Choć nie jest to model wideo, jest to <i>pra-wydarzenie</i>. Wynalezienie architektury GAN zapoczątkowało rewolucję generatywną. Generator tworzy fałszywe dane, a Dyskryminator próbuje odróżnić je od prawdziwych.</p><ul><li><b>Innowacja:</b> Możliwość treningu przeciwstawnego (adversarial training).</li><li><b>Ograniczenia:</b> Początkowo bardzo niestabilny trening, zapadanie się modów (mode collapse), niska rozdzielczość (MNIST/CIFAR-10).</li></ul>"
+        },
+        "media": {
+            "url": "https://i0.wp.com/semiengineering.com/wp-content/uploads/nn3.png",
+            "caption": "Podstawowa struktura GAN"
+        }
+    },
+    {
+        "start_date": {
+            "year": "2016",
+            "month": "09"
+        },
+        "text": {
+            "headline": "VGAN (Wideo GAN)",
+            "text": "<p><b>Vondrick i in. (MIT)</b></p><p>Jedna z pierwszych udanych prób skalowania GAN do wideo. Wykorzystywała czasoprzestrzenną architekturę konwolucyjną do generowania malutkich filmów o niskiej rozdzielczości (np. sceny golfowe, fale).</p><ul><li><b>Architektura:</b> Konwolucje 3D (C3D) w ramach GAN.</li><li><b>Innowacja:</b> Strukturalne oddzielenie generowania tła (statyczne) od pierwszego planu (ruch).</li><li><b>Ograniczenia:</b> Mikroskopijna rozdzielczość (64x64), artefakty 'duchów', krótki czas trwania (1 sekunda).</li></ul>"
+        },
+        "media": {
+            "url": "https://www.researchgate.net/profile/Prateep-Bhattacharjee/publication/330584963/figure/fig1/AS:719955406364675@1548662153762/The-proposed-GAN-based-network-architecture-for-video-frame-prediction.png",
+            "caption": "Architektura Generatora VGAN"
+        }
+    },
+    {
+        "start_date": {
+            "year": "2017",
+            "month": "07"
+        },
+        "text": {
+            "headline": "MoCoGAN: Rozkład Ruchu i Treści",
+            "text": "<p><b>Tulyakov i in. (Snap Research)</b></p><p>MoCoGAN wyraźnie rozdzielił przestrzeń ukrytą na <i>Treść (Content)</i> (co to za obiekt) i <i>Ruch (Motion)</i> (co ten obiekt robi). Pozwoliło to na zamrażanie czasu lub wymianę akcji między filmami.</p><ul><li><b>Architektura:</b> Rekurencyjna Sieć Neuronowa (RNN) połączona z GAN.</li><li><b>Innowacja:</b> Nauka rozłącznych reprezentacji (Disentangled Representation Learning) dla wideo.</li><li><b>Ograniczenia:</b> Wciąż ograniczone do prostych domen (mimika twarzy, proste akcje).</li></ul>"
+        },
+        "media": {
+            "url": "https://research.nvidia.com/sites/default/files/publications/mocogan_1.gif",
+            "caption": "Przykłady rozdzielenia cech w MoCoGAN"
+        }
+    },
+    {
+        "start_date": {
+            "year": "2018",
+            "month": "08"
+        },
+        "text": {
+            "headline": "Vid2Vid (Synteza Wideo-do-Wideo)",
+            "text": "<p><b>Wang i in. (NVIDIA)</b></p><p>Ogromny skok w rozdzielczości i stabilności czasowej. Model tłumaczył mapy segmentacji semantycznej lub krawędzi na fotorealistyczne sekwencje wideo. Używany do symulacji jazdy miejskiej i póz tanecznych.</p><ul><li><b>Architektura:</b> Czasoprzestrzenny cel przeciwniczy + warping przepływu optycznego.</li><li><b>Innowacja:</b> Modelowanie dynamiki czasowej poprzez przepływ optyczny, aby wymusić spójność między klatkami.</li><li><b>Zastosowanie:</b> Wysokorozdzielcze symulacje jazdy i transfer póz ciała.</li></ul>"
+        },
+        "media": {
+            "url": "https://tcwang0509.github.io/vid2vid/images/teaser.gif",
+            "caption": "Wyniki NVIDIA Vid2Vid"
+        }
+    },
+    {
+        "start_date": {
+            "year": "2019",
+            "month": "11"
+        },
+        "text": {
+            "headline": "First Order Motion Model",
+            "text": "<p><b>Siarohin i in. (Snap/Trento)</b></p><p>Generator wiralowego mema 'Dame Da Ne'. Ten model pozwolił na animowanie zdjęcia źródłowego za pomocą ruchu z wideo sterującego bez treningu na konkretnych kategoriach obiektów. Przenosił ruch za pomocą punktów kluczowych.</p><ul><li><b>Architektura:</b> Generator pola deformacji oparty na punktach kluczowych.</li><li><b>Innowacja:</b> Transfer ruchu Zero-shot (animacja dowolnej twarzy/ciała).</li><li><b>Wpływ:</b> Demokratyzacja 'DeepFakes' dla celów rozrywkowych.</li></ul>"
+        },
+        "media": {
+            "url": "https://miro.medium.com/1*2VlAXsgGP9P7eoDHTV3bxg.gif",
+            "caption": "Animacja First Order Motion Model"
+        }
+    },
+    {
+        "start_date": {
+            "year": "2021",
+            "month": "05"
+        },
+        "text": {
+            "headline": "GODIVA: Generowanie Wideo w Domenie Otwartej",
+            "text": "<p><b>Wu i in. (Microsoft Asia)</b></p><p>Jedna z pierwszych prób odejścia od GAN w kierunku VQ-VAE i Transformerów. Potraktowano generowanie wideo jako problem przewidywania tokenów, podobnie jak w GPT-3.</p><ul><li><b>Architektura:</b> 3D VQ-VAE + Rzadki (Sparse) Transformer.</li><li><b>Innowacja:</b> Obsługa generowania w 'Domenie Otwartej' zamiast konkretnych kategorii.</li></ul>"
+        },
+        "media": {
+            "url": "https://www.unite.ai/wp-content/uploads/2021/05/VQ-VAE_architecture.jpg",
+            "caption": "Diagram Architektury GODIVA"
+        }
+    },
+    {
+        "start_date": {
+            "year": "2022",
+            "month": "04"
+        },
+        "text": {
+            "headline": "CogVideo: Wielkoskalowy Pretrening",
+            "text": "<p><b>Uniwersytet Tsinghua</b></p><p>Jeden z pierwszych otwartoźródłowych, wielkoskalowych transformerów tekst-na-wideo (Text-to-Video). Zbudowany na bazie modelu obrazkowego CogView.</p><ul><li><b>Architektura:</b> Wielo-klatkowy VQ-VAE + Autoregresyjny Transformer.</li><li><b>Innowacja:</b> Dwukanałowy mechanizm uwagi do obsługi dopasowania tekstu i wideo.</li></ul>"
+        },
+        "media": {
+            "url": "https://cogvideo.pka.moe/videos/%E7%B3%BB%E5%88%972/159_%E7%A9%BF%E7%BA%A2%E8%A3%99%E5%AD%90%E7%9A%84%E5%A5%B3%E5%AD%90%E5%9C%A8%E5%BE%AE%E7%AC%91/3.gif",
+            "caption": "Próbki CogVideo"
+        }
+    },
+    {
+        "start_date": {
+            "year": "2022",
+            "month": "09"
+        },
+        "text": {
+            "headline": "Make-A-Video",
+            "text": "<p><b>Meta AI</b></p><p>Moment zwrotny. Meta pokazała, że nie potrzeba ogromnych, opisanych zbiorów wideo. Wzięli wytrenowany model Tekst-na-Obraz (T2I) i dodali warstwy czasowe, ucząc tylko ruchu na nieopisanym wideo.</p><ul><li><b>Architektura:</b> Warstwy Pseudo-3D Konwolucji/Uwagi dodane do standardowego U-Net dyfuzyjnego.</li><li><b>Innowacja:</b> Uczenie nienadzorowane dynamiki ruchu na bazie nadzorowanego generowania obrazu.</li></ul>"
+        },
+        "media": {
+            "url": "https://makeavideo.studio/assets/A_teddy_bear_painting_a_portrait.webp",
+            "caption": "Próbki Make-A-Video"
+        }
+    },
+    {
+        "start_date": {
+            "year": "2022",
+            "month": "10"
+        },
+        "text": {
+            "headline": "Phenaki & Imagen Video",
+            "text": "<p><b>Google Research</b></p><p>Google opublikowało prace o dwóch modelach jednocześnie. <b>Phenaki</b> skupiało się na długich formach wideo (minuty) używając uwagi przyczynowej. <b>Imagen Video</b> skupiało się na krótkich klipach wysokiej rozdzielczości używając kaskadowych modeli dyfuzyjnych.</p><ul><li><b>Architektura:</b> Masked GIT (Phenaki) vs. Cascaded Diffusion (Imagen).</li><li><b>Innowacja:</b> Generowanie narracji o zmiennej długości (Phenaki).</li></ul>"
+        },
+        "media": {
+            "url": "https://storage.googleapis.com/gweb-research2023-media/media/Microsite_Phenaki_EmbedVideo.mp4",
+            "caption": "Wyjście HD z Imagen Video"
+        }
+    },
+    {
+        "start_date": {
+            "year": "2023",
+            "month": "02"
+        },
+        "text": {
+            "headline": "Gen-1",
+            "text": "<p><b>Runway</b></p><p>Runway wprowadził Gen-1, skupiając się na stylizacji <i>Wideo-do-Wideo</i>. Pozwoliło to użytkownikom nałożenie stylu obrazu lub promptu na surowy render 3D lub nagranie z telefonu.</p><ul><li><b>Fokus:</b> Dyfuzja kierowana strukturą (Structure-guided diffusion).</li><li><b>Wpływ:</b> Praktyczne narzędzie dla artystów VFX i filmowców.</li></ul>"
+        },
+        "media": {
+            "url": "https://d3phaj0sisr2ct.cloudfront.net/research/GEN1.mp4",
+            "caption": "Transformacje Runway Gen-1"
+        }
+    },
+    {
+        "start_date": {
+            "year": "2023",
+            "month": "03"
+        },
+        "text": {
+            "headline": "Gen-2",
+            "text": "<p><b>Runway</b></p><p>Krótko potem wydano Gen-2, umożliwiając wysokiej jakości generowanie Tekst-na-Wideo bezpośrednio, usuwając konieczność posiadania materiału wejściowego.</p>"
+        },
+        "media": {
+            "url": "https://d3phaj0sisr2ct.cloudfront.net/research/Gen2.mp4",
+            "caption": "Runway Gen-2"
+        }
+    },
+    {
+        "start_date": {
+            "year": "2023",
+            "month": "11"
+        },
+        "text": {
+            "headline": "Stable Video Diffusion (SVD)",
+            "text": "<p><b>Stability AI</b></p><p>Udostępniono wagi dla potężnego modelu Obraz-na-Wideo opartego na Stable Diffusion 2.1. Stało się to kręgosłupem społeczności open-source.</p><ul><li><b>Struktura:</b> Latent Video Diffusion Model.</li><li><b>Innowacja:</b> Potwierdzenie, że wysoka jakość kuracji danych jest ważniejsza niż rozmiar modelu.</li></ul>"
+        },
+        "media": {
+            "url": "https://assets.monica.im/low-code/img/svd1-5f3b763b-f591-4057-8f8c-932525380b79.mp4",
+            "caption": "Generacje SVD"
+        }
+    },
+    {
+        "start_date": {
+            "year": "2023",
+            "month": "11"
+        },
+        "text": {
+            "headline": "Pika 1.0",
+            "text": "<p><b>Pika Labs</b></p><p>Pika pojawiła się z bardzo płynnym stylem animacji, przodując w stylach anime i 3D. Wprowadziła 'Modify Region' (inpainting) dla wideo.</p>"
+        },
+        "media": {
+            "url": "https://s.yimg.com/ny/api/res/1.2/mlswsk.x0yOvQUToUjneNQ--/YXBwaWQ9aGlnaGxhbmRlcjt3PTcwNTtoPTM5NQ--/https://media.zenfs.com/en/toms_guide_826/40b294efeb646c46a6700bdf77e3e199",
+            "caption": "Pokaz możliwości Pika 1.0"
+        }
+    },
+    {
+        "start_date": {
+            "year": "2024",
+            "month": "01"
+        },
+        "text": {
+            "headline": "Lumiere",
+            "text": "<p><b>Google Research</b></p><p>Wprowadzenie Space-Time U-Net (STUNet). W przeciwieństwie do poprzednich modeli, które generowały klatki kluczowe a potem je interpolowały (powodując niespójność czasową), Lumiere generuje całą długość trwania jednocześnie w jednym przebiegu.</p><ul><li><b>Architektura:</b> Space-Time U-Net.</li><li><b>Innowacja:</b> Holistyczne generowanie czasowe dla doskonałej spójności ruchu.</li></ul>"
+        },
+        "media": {
+            "url": "https://youtu.be/wxLr02Dz2Sc",
+            "caption": "Wyniki Lumiere Space-Time U-Net"
+        }
+    },
+    {
+        "start_date": {
+            "year": "2024",
+            "month": "02"
+        },
+        "text": {
+            "headline": "Sora",
+            "text": "<p><b>OpenAI</b></p><p>'Moment GPT-3' dla wideo. Sora zademonstrowała wyłaniające się (emergent) zdolności symulacji fizyki, długi czas trwania (60s) i niesamowicie złożone ruchy kamery bez riggowania 3D.</p><ul><li><b>Architektura:</b> Diffusion Transformer (DiT). Używa patchy wizualnych jako tokenów (podobnie jak tokeny w LLM).</li><li><b>Innowacja:</b> Prawa skalowania zastosowane do wideo. Udowodniono, że skala rozwiązuje problemy spójności.</li></ul>"
+        },
+        "media": {
+            "url": "https://www.youtube.com/watch?v=HK6y8DAPN_0",
+            "caption": "Sora: Spacer w Tokio"
+        }
+    },
+    {
+        "start_date": {
+            "year": "2024",
+            "month": "06"
+        },
+        "text": {
+            "headline": "Luma Dream Machine",
+            "text": "<p><b>Luma AI</b></p><p>Szybki, wysokiej jakości model transformer dostępny publicznie. Znany z realistycznej fizyki i zdolności do tworzenia spójnych zapętlonych wideo ('looping').</p>"
+        },
+        "media": {
+            "url": "https://static.cdn-luma.com/files/sanity/619f51cd-0eac-41a5-bb67-84ca6b768ed1.mp4",
+            "caption": "Fizyka Dream Machine"
+        }
+    },
+    {
+        "start_date": {
+            "year": "2024",
+            "month": "06"
+        },
+        "text": {
+            "headline": "Kling",
+            "text": "<p><b>Kuaishou (Chiny)</b></p><p>Potężny rywal zdolny do generowania wideo do 2 minut w 1080p. Wykorzystuje architekturę DiT (Diffusion Transformer) podobną do Sora.</p><ul><li><b>Innowacja:</b> 3D VAE dla lepszej rekonstrukcji.</li></ul>"
+        },
+        "media": {
+            "url": "https://v1-kling.kechuangai.com/kcdn/cdn-kcdn112452/kling-website/page1-v2-5-265.mp4",
+            "caption": "Generacja Kling AI"
+        }
+    },
+    {
+        "start_date": {
+            "year": "2024",
+            "month": "06"
+        },
+        "text": {
+            "headline": "Gen-3 Alpha",
+            "text": "<p><b>Runway</b></p><p>Przejście Runway w stronę Ogólnych Modeli Świata (General World Models). Gen-3 oferuje fotorealistyczną kontrolę i precyzyjną spójność czasową, trenowany na ogromnej infrastrukturze, by konkurować z Sorą.</p>"
+        },
+        "media": {
+            "url": "https://d3phaj0sisr2ct.cloudfront.net/site/videos/gen-3-alpha/carousel-01/gen-3-alpha-output-001.mp4",
+            "caption": "Runway Gen-3 Alpha"
+        }
+    }
+]
