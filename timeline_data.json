@@ -44,6 +44,20 @@
     {
         "start_date": {
             "year": "2018",
+            "month": "03"
+        },
+        "text": {
+            "headline": "World Models",
+            "text": "<p><b>Ha & Schmidhuber</b></p><p>Przełomowa praca pokazująca, że sieć neuronowa może 'śnić' o przyszłości. Model VAE uczył się kompresować klatki gry Doom, a model RNN przewidywał, co stanie się dalej.</p><ul><li><b>Architektura:</b> VAE (Vision) + RNN (Memory) + Controller.</li><li><b>Znaczenie:</b> Podwaliny pod dzisiejsze symulatory świata (jak GameNGen czy Sora).</li></ul>"
+        },
+        "media": {
+            "url": "https://rohitbandaru.github.io/assets/img/blog/world_models/world_model.png",
+            "caption": "Architektura World Models"
+        }
+    },
+    {
+        "start_date": {
+            "year": "2018",
             "month": "08"
         },
         "text": {
@@ -81,6 +95,20 @@
         "media": {
             "url": "https://www.unite.ai/wp-content/uploads/2021/05/VQ-VAE_architecture.jpg",
             "caption": "Diagram Architektury GODIVA"
+        }
+    },
+    {
+        "start_date": {
+            "year": "2021",
+            "month": "11"
+        },
+        "text": {
+            "headline": "NÜWA",
+            "text": "<p><b>Microsoft Research</b></p><p>Uniwersalny model multimodalny. Potrafił nie tylko generować wideo z tekstu, ale też edytować obrazy i szkice.</p><ul><li><b>Architektura:</b> 3D Transformer Encoders/Decoders.</li><li><b>Znaczenie:</b> Krok w stronę modeli 'szwajcarskich scyzoryków' w wizji komputerowej.</li></ul>"
+        },
+        "media": {
+            "url": "https://youtu.be/9ocpo6VVbho",
+            "caption": "Próbki NÜWA"
         }
     },
     {
@@ -249,6 +277,20 @@
         "media": {
             "url": "https://d3phaj0sisr2ct.cloudfront.net/site/videos/gen-3-alpha/carousel-01/gen-3-alpha-output-001.mp4",
             "caption": "Runway Gen-3 Alpha"
+        }
+    },
+    {
+        "start_date": {
+            "year": "2024",
+            "month": "08"
+        },
+        "text": {
+            "headline": "GameNGen",
+            "text": "<p><b>Google Research</b></p><p>Pierwszy silnik gry w całości oparty na modelu dyfuzyjnym. Potrafi symulować grę DOOM w 20 FPS w czasie rzeczywistym, bez klasycznego renderowania.</p><ul><li><b>Znaczenie:</b> Krok milowy w stronę generatywnych symulacji świata (World Models).</li></ul>"
+        },
+        "media": {
+            "url": "https://youtu.be/O3616ZFGpqw?list=PL3ZfMho22LwDvJSEKVBiwxNsVEqUTUmhJ",
+            "caption": "GameNGen: DOOM z sieci neuronowej"
         }
     }
 ]
