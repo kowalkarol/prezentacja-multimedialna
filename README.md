@@ -1,5 +1,9 @@
 # Ewolucja Generowania Wideo AI
 
+**Projekt na zaliczenie przedmiotu: Multimedialne metody opracowywania danych**
+
+🔗 **Demo online:** [https://multimedialne-metody-opracowywania-danych.streamlit.app/](https://multimedialne-metody-opracowywania-danych.streamlit.app/)
+
 Interaktywna prezentacja multimedialna w formie osi czasu, przedstawiająca historię rozwoju technologii generowania wideo przez sztuczną inteligencję (od sieci GAN, przez VAE, aż po modele dyfuzyjne).
 
 Aplikacja została zbudowana przy użyciu **Streamlit** oraz biblioteki **TimelineJS** (własna implementacja komponentu).
