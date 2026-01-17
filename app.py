@@ -29,12 +29,9 @@ def timeline(data, height=600):
             background-color: #ffffff;
         }
         
-        body.dark-mode .tl-media-content, 
-        body.dark-mode .tl-media-image, 
         body.dark-mode img, 
         body.dark-mode video, 
-        body.dark-mode iframe, 
-        body.dark-mode .tl-media-shadow {
+        body.dark-mode iframe {
             filter: invert(100%) hue-rotate(180deg) !important;
         }
         
